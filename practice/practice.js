@@ -19,7 +19,7 @@
     loading.hidden = false;
     loading.textContent = 'Загружаем текст инструкции…';
     error.hidden = true;
-    pendingLoad = fetch('files/system-prompt.txt', { credentials: 'same-origin' })
+    pendingLoad = fetch('files/system-prompt.txt?v=12', { credentials: 'same-origin' })
       .then(response => {
         if (!response.ok) throw new Error('Instruction file is unavailable');
         return response.text();
@@ -86,7 +86,7 @@
       }
       if (!copied) copied = legacyCopy(value);
       if (copied) {
-        copyStatus.textContent = 'Текст инструкции скопирован. Вставьте его в поле инструкции AI Studio.';
+        copyStatus.textContent = 'Текст инструкции скопирован. Вставьте его в системный промпт в параметрах GigaChat Agent.';
         copyButton.textContent = 'Скопировать ещё раз';
       } else {
         selectPreview();
