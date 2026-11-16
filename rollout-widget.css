@@ -1,0 +1,23 @@
+/* HSE rollout guide, scoped to its own slide widget. */
+#rolloutWidget{width:100%;max-width:1660px;margin:8px 0 0;color:#0f2d69;font-family:"HSE Sans",Arial,sans-serif}
+#rolloutWidget .rollout-layout{display:grid;grid-template-columns:660px minmax(0,1fr);gap:38px;align-items:start}
+#rolloutWidget .rollout-stages{display:grid;gap:7px}
+#rolloutWidget .rollout-stage{display:grid;grid-template-columns:42px minmax(0,1fr);align-items:center;gap:14px;width:100%;height:72px;padding:6px 13px;text-align:left;border:1px solid #c0cde0;border-radius:3px;box-shadow:none;background:#fff;color:#0f2d69;cursor:pointer;transform:none}
+#rolloutWidget .rollout-stage:hover{background:#edf2fa;transform:none}
+#rolloutWidget .rollout-stage[aria-pressed="true"]{background:#0f2d69;border-color:#0f2d69;color:#fff}
+#rolloutWidget .rollout-stage:focus-visible{outline:3px solid #254b9b;outline-offset:3px}
+#rolloutWidget .rollout-stage-number{font:600 28px/1 "HSE Sans",Arial,sans-serif;text-align:center}
+#rolloutWidget .rollout-stage-copy{display:grid;gap:3px;min-width:0}
+#rolloutWidget .rollout-stage-copy strong{font:600 25px/1.12 "HSE Sans",Arial,sans-serif}
+#rolloutWidget .rollout-stage-copy>span{font:400 22px/1.2 "HSE Sans",Arial,sans-serif}
+#rolloutWidget .rollout-detail{min-width:0;padding-left:28px;border-left:1px solid #cbd6e7}
+#rolloutWidget .rollout-detail h2{font:600 32px/1.12 "HSE Sans",Arial,sans-serif;color:#0f2d69;margin:0 0 12px;letter-spacing:-.2px}
+#rolloutWidget .rollout-detail dl{margin:0}
+#rolloutWidget .rollout-fact{display:grid;grid-template-columns:176px minmax(0,1fr);gap:20px;padding:14px 0;border-bottom:1px solid #d4dce9}
+#rolloutWidget .rollout-fact dt{font:600 21px/1.2 "HSE Sans",Arial,sans-serif;color:#566681;margin:0}
+#rolloutWidget .rollout-fact dd{font:400 25px/1.25 "HSE Sans",Arial,sans-serif;color:#18284b;margin:0}
+#rolloutWidget .rollout-transition{border-bottom:0}
+#rolloutWidget .rollout-transition dt{color:#0f2d69}
+#rolloutWidget .rollout-transition dd{font-weight:600;color:#0f2d69}
+#rolloutWidget .rollout-footer{font:400 24px/1.25 "HSE Sans",Arial,sans-serif;color:#18284b;background:#edf2fa;border-left:3px solid #254b9b;padding:10px 16px;margin:14px 0 0}
+@media(prefers-reduced-motion:reduce){#rolloutWidget *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
