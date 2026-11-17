@@ -29,6 +29,7 @@
       <div class="primary-actions">
         <a class="button button-primary" href="guide.pdf?v=12" download>Скачать PDF <span aria-hidden="true">↓</span></a>
         <a class="button button-secondary" href="sever-kit.zip?v=12" download>Весь комплект ZIP <span aria-hidden="true">↓</span></a>
+        <a class="button button-secondary" href="ready-agent.json" download>Готовый пайплайн JSON <span aria-hidden="true">↓</span></a>
       </div>
       <p class="download-note">Для скачивания файлов вход в GitHub не требуется.</p>
     </section>
@@ -78,13 +79,16 @@
       <p class="section-intro">Соедините основной путь: <strong>Ввод из чата → GigaChat Agent → Вывод в чат</strong>.</p>
       <p class="section-intro">Добавьте <strong>GigaRAG</strong> из раздела <strong>«Технологии Giga»</strong> и блок <strong>«Калькулятор»</strong>. Оба инструмента подключите к входу <strong>Tools</strong> блока <strong>GigaChat Agent</strong>.</p>
       <p class="section-intro">После запуска проверяйте в журнале фактические вызовы: <code>gigarag_response_to_message</code> для поиска и <code>evaluate_expression</code> для калькулятора.</p>
-      <details class="instruction-details">
-        <summary>Резервный вариант: импорт готового графа</summary>
-        <div class="reference-content">
-          <p>Скачайте шаблон и импортируйте его в GigaBlocks. После импорта откройте GigaRAG и выберите свой тенант с тремя документами. Проверьте подключение обоих инструментов к Tools.</p>
-          <p><a class="button button-secondary" href="ready-agent.json?v=12" download>Скачать ready-agent.json</a></p>
-        </div>
-      </details>
+    </section>
+
+    <section class="section" id="ready-pipeline" aria-labelledby="ready-title">
+      <h2 id="ready-title">Готовая конфигурация учебного пайплайна</h2>
+      <p class="section-intro">В JSON-файле «СЕВЕР» уже соединены все пять блоков и задана системная инструкция. Импортируйте конфигурацию в GigaBlocks своего аккаунта.</p>
+      <div class="primary-actions">
+        <a class="button button-primary" href="ready-agent.json" download>Скачать ready-agent.json ↓</a>
+        <a class="button button-secondary" href="https://github.com/alekstravin/genai-business-hse-2026/blob/main/practice/ready-agent.json" target="_blank" rel="noopener">Посмотреть JSON на GitHub ↗</a>
+      </div>
+      <p class="section-intro" style="margin-top:24px">Документы не входят в JSON. Загрузите FIN-01, COM-01 и CTRL-01 в свою базу знаний, затем в блоке GigaRAG выберите свой тенант. Проверьте подключения инструментов к Tools и их фактические вызовы в журнале.</p>
     </section>
 
     <section class="section" aria-labelledby="prompt-title">
